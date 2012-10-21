@@ -1,0 +1,543 @@
+{
+    "fields": [
+        {
+            "name": "local_assistants", 
+            "fields": [
+                "string"
+            ], 
+            "frequence": "74%", 
+            "key": "Local assistants", 
+            "null": true, 
+            "type": "list"
+        }, 
+        {
+            "name": "accredited_assistants", 
+            "fields": [
+                "string"
+            ], 
+            "frequence": "94%", 
+            "key": "Accredited assistants", 
+            "null": true, 
+            "type": "list"
+        }, 
+        {
+            "fields": [
+                {
+                    "name": "group", 
+                    "min_len": 20, 
+                    "max_len": 88, 
+                    "key": "group", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "role", 
+                    "min_len": 5, 
+                    "max_len": 31, 
+                    "key": "role", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "null": false, 
+                    "type": "unicode and list", 
+                    "name": "groupid", 
+                    "key": "groupid"
+                }, 
+                {
+                    "name": "start", 
+                    "min_len": 19, 
+                    "frequence": "6%", 
+                    "max_len": 19, 
+                    "key": "start", 
+                    "null": true, 
+                    "type": "unicode"
+                }
+            ], 
+            "null": false, 
+            "type": "list and dict", 
+            "name": "groups", 
+            "key": "Groups"
+        }, 
+        {
+            "fields": [
+                {
+                    "fields": [
+                        "string"
+                    ], 
+                    "null": false, 
+                    "type": "list", 
+                    "name": "aliases", 
+                    "key": "aliases"
+                }, 
+                {
+                    "name": "full", 
+                    "min_len": 8, 
+                    "max_len": 37, 
+                    "key": "full", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "sur", 
+                    "min_len": 2, 
+                    "max_len": 22, 
+                    "key": "sur", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "family", 
+                    "min_len": 3, 
+                    "frequence": "99%", 
+                    "max_len": 29, 
+                    "key": "family", 
+                    "null": true, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "familylc", 
+                    "min_len": 3, 
+                    "frequence": "99%", 
+                    "max_len": 29, 
+                    "key": "familylc", 
+                    "null": true, 
+                    "type": "unicode"
+                }
+            ], 
+            "null": false, 
+            "type": "dict", 
+            "name": "name", 
+            "key": "Name"
+        }, 
+        {
+            "name": "gender", 
+            "min_len": 1, 
+            "max_len": 1, 
+            "key": "Gender", 
+            "null": false, 
+            "type": "unicode"
+        }, 
+        {
+            "fields": [
+                {
+                    "name": "bruxelles", 
+                    "fields": [
+                        {
+                            "name": "building", 
+                            "min_len": 11, 
+                            "max_len": 21, 
+                            "key": "Building", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "building_code", 
+                            "min_len": 3, 
+                            "max_len": 3, 
+                            "key": "building_code", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "fax", 
+                            "min_len": 13, 
+                            "max_len": 13, 
+                            "key": "Fax", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "zip", 
+                            "min_len": 6, 
+                            "max_len": 6, 
+                            "key": "Zip", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "office", 
+                            "min_len": 6, 
+                            "max_len": 6, 
+                            "key": "Office", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "city", 
+                            "min_len": 17, 
+                            "max_len": 17, 
+                            "key": "City", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "phone", 
+                            "min_len": 13, 
+                            "max_len": 13, 
+                            "key": "Phone", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "street", 
+                            "min_len": 32, 
+                            "max_len": 32, 
+                            "key": "Street", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "organization", 
+                            "min_len": 18, 
+                            "max_len": 18, 
+                            "key": "Organization", 
+                            "null": false, 
+                            "type": "unicode"
+                        }
+                    ], 
+                    "frequence": "99%", 
+                    "key": "Bruxelles", 
+                    "null": true, 
+                    "type": "dict"
+                }, 
+                {
+                    "name": "luxembourg", 
+                    "fields": [
+                        {
+                            "name": "phone", 
+                            "min_len": 15, 
+                            "max_len": 15, 
+                            "key": "Phone", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "fax", 
+                            "min_len": 15, 
+                            "max_len": 15, 
+                            "key": "Fax", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "address", 
+                            "fields": [], 
+                            "frequence": "0%", 
+                            "key": "Address", 
+                            "null": true, 
+                            "type": "list and dict"
+                        }
+                    ], 
+                    "frequence": "0%", 
+                    "key": "Luxembourg", 
+                    "null": true, 
+                    "type": "dict"
+                }, 
+                {
+                    "fields": [
+                        {
+                            "name": "building", 
+                            "min_len": 17, 
+                            "max_len": 22, 
+                            "key": "Building", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "city", 
+                            "min_len": 10, 
+                            "max_len": 10, 
+                            "key": "City", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "fax", 
+                            "min_len": 15, 
+                            "max_len": 15, 
+                            "key": "Fax", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "office", 
+                            "min_len": 5, 
+                            "max_len": 7, 
+                            "key": "Office", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "building_code", 
+                            "min_len": 3, 
+                            "max_len": 3, 
+                            "key": "building_code", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "phone", 
+                            "min_len": 15, 
+                            "max_len": 15, 
+                            "key": "Phone", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "street", 
+                            "min_len": 37, 
+                            "max_len": 37, 
+                            "key": "Street", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "organization", 
+                            "min_len": 18, 
+                            "max_len": 18, 
+                            "key": "Organization", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "zip2", 
+                            "min_len": 7, 
+                            "max_len": 7, 
+                            "key": "Zip2", 
+                            "null": false, 
+                            "type": "unicode"
+                        }, 
+                        {
+                            "name": "zip1", 
+                            "min_len": 8, 
+                            "max_len": 8, 
+                            "key": "Zip1", 
+                            "null": false, 
+                            "type": "unicode"
+                        }
+                    ], 
+                    "null": false, 
+                    "type": "dict", 
+                    "name": "strasbourg", 
+                    "key": "Strasbourg"
+                }, 
+                {
+                    "name": "postal_address", 
+                    "fields": [
+                        "string"
+                    ], 
+                    "frequence": "98%", 
+                    "key": "Postal address", 
+                    "null": true, 
+                    "type": "list"
+                }
+            ], 
+            "null": false, 
+            "type": "dict", 
+            "name": "addresses", 
+            "key": "Addresses"
+        }, 
+        {
+            "null": false, 
+            "type": "int", 
+            "name": "userid", 
+            "key": "UserID"
+        }, 
+        {
+            "null": false, 
+            "type": "bool", 
+            "name": "active", 
+            "key": "active"
+        }, 
+        {
+            "fields": [
+                {
+                    "name": "url", 
+                    "min_len": 50, 
+                    "max_len": 53, 
+                    "key": "url", 
+                    "null": false, 
+                    "type": "unicode"
+                }
+            ], 
+            "null": false, 
+            "type": "dict", 
+            "name": "meta", 
+            "key": "meta"
+        }, 
+        {
+            "name": "birth", 
+            "fields": [
+                {
+                    "name": "date", 
+                    "min_len": 19, 
+                    "max_len": 19, 
+                    "key": "date", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "place", 
+                    "min_len": 3, 
+                    "frequence": "99%", 
+                    "max_len": 42, 
+                    "key": "place", 
+                    "null": true, 
+                    "type": "unicode"
+                }
+            ], 
+            "frequence": "99%", 
+            "key": "Birth", 
+            "null": true, 
+            "type": "dict"
+        }, 
+        {
+            "name": "photo", 
+            "min_len": 46, 
+            "max_len": 49, 
+            "key": "Photo", 
+            "null": false, 
+            "type": "unicode"
+        }, 
+        {
+            "fields": [
+                {
+                    "name": "country", 
+                    "min_len": 5, 
+                    "max_len": 14, 
+                    "key": "country", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "start", 
+                    "min_len": 19, 
+                    "frequence": "6%", 
+                    "max_len": 19, 
+                    "key": "start", 
+                    "null": true, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "party", 
+                    "fields": [
+                        "string"
+                    ], 
+                    "frequence": "93%", 
+                    "key": "party", 
+                    "null": true, 
+                    "type": "list"
+                }
+            ], 
+            "null": false, 
+            "type": "list and dict", 
+            "name": "constituencies", 
+            "key": "Constituencies"
+        }, 
+        {
+            "name": "mail", 
+            "fields": [
+                "string"
+            ], 
+            "frequence": "97%", 
+            "key": "Mail", 
+            "null": true, 
+            "type": "list"
+        }, 
+        {
+            "name": "delegations", 
+            "fields": [
+                {
+                    "name": "organization", 
+                    "min_len": 34, 
+                    "max_len": 171, 
+                    "key": "Organization", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "role", 
+                    "min_len": 5, 
+                    "max_len": 12, 
+                    "key": "role", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "abbr", 
+                    "min_len": 4, 
+                    "max_len": 4, 
+                    "key": "abbr", 
+                    "null": false, 
+                    "type": "unicode"
+                }
+            ], 
+            "frequence": "96%", 
+            "key": "Delegations", 
+            "null": true, 
+            "type": "list"
+        }, 
+        {
+            "fields": [
+                "string"
+            ], 
+            "null": false, 
+            "type": "list", 
+            "name": "rss", 
+            "key": "RSS"
+        }, 
+        {
+            "name": "homepage", 
+            "fields": [
+                "string"
+            ], 
+            "frequence": "66%", 
+            "key": "Homepage", 
+            "null": true, 
+            "type": "list"
+        }, 
+        {
+            "name": "cv", 
+            "fields": [
+                "string"
+            ], 
+            "frequence": "88%", 
+            "key": "CV", 
+            "null": true, 
+            "type": "list"
+        }, 
+        {
+            "fields": [
+                {
+                    "name": "organization", 
+                    "min_len": 9, 
+                    "max_len": 31, 
+                    "key": "Organization", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "role", 
+                    "min_len": 5, 
+                    "max_len": 14, 
+                    "key": "role", 
+                    "null": false, 
+                    "type": "unicode"
+                }, 
+                {
+                    "name": "abbr", 
+                    "min_len": 2, 
+                    "max_len": 4, 
+                    "key": "abbr", 
+                    "null": false, 
+                    "type": "unicode"
+                }
+            ], 
+            "null": false, 
+            "type": "list", 
+            "name": "staff", 
+            "key": "Staff"
+        }
+    ]
+}
